@@ -17,7 +17,7 @@
         <a href="#" class="logo">MajVel</a>
         <div class="bx bx-menu" id="menu-icon"></div>
             <ul class="navbar">
-                <li><a href="#home">Home</a></li>
+                <li><a href="index.php">Home</a></li>
                 <li><a href="daftar.php">Daftar</a></li>
             </ul>
     </header>   
@@ -65,7 +65,7 @@ if(mysqli_num_rows($query)==0)
       <td><?=$detail['hp_pemesan']?></td>
       <td><?=$detail['waktu_wisata']?></td>
       <td><?=$detail['total_tagihan']?></td>
-      <td><a href="index.php?aksi=detail&id_pemesanan=<?=$detail['id_pemesanan']?>">Detail</a> <a href="index.php?aksi=edit&id_pemesanan=<?=$detail['id_pemesanan']?>">Edit</a> <a href="index.php?aksi=hapus&id_pemesanan=<?=$detail['id_pemesanan']?>">Hapus</a></td>
+      <td><a style="color: blue;" href="index.php?aksi=detail&id_pemesanan=<?=$detail['id_pemesanan']?>">Detail</a> <a href="index.php?aksi=edit&id_pemesanan=<?=$detail['id_pemesanan']?>">Edit</a> <a style="color: red;" href="main/hapus.php?id_pemesanan=<?=$detail['id_pemesanan']?>">Hapus</a></td>
     </tr>
         <?php
         $co++;
